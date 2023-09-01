@@ -19,7 +19,7 @@ const displayCards = (details) => {
 
   details.forEach((AI) => {
     const card = document.createElement("div");
-    card.classList = `card w-96 bg-base-100 border-2 border-gray-200 p-5`;
+    card.classList = `card w-80 lg:w-88 bg-base-100 border-2 border-gray-200 p-5 mx-auto`;
     
     card.innerHTML = `
         <figure class="">
@@ -29,7 +29,7 @@ const displayCards = (details) => {
         <h1 class="text-xl font-semibold">Features</h1>
         <p class="count-track text-gray-500">1. ${AI.features[0]}</p>
         <p class="count-track text-gray-500">1. ${AI.features[1]}</p>
-        <p class="count-track text-gray-500">1. ${AI.features[2]}</p>
+        <p class="count-track text-gray-500 pb-2">1. ${AI.features[2]}</p>
         <hr>
         <h1 class="text-xl font-semibold mt-2">Features</h1>
         <p class="count-track text-gray-500">Published in : ${AI.published_in}</p>

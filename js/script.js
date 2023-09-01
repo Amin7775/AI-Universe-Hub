@@ -14,6 +14,11 @@ const loadData = async () => {
 };
 
 loadData();
+
+const defaultSortBtn = () =>{
+    loadData();
+}
+
 const displayCards = (details) => {
   const cardContainer = document.getElementById("card-container");
   cardContainer.textContent = "";
